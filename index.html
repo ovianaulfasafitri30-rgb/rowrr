@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>YOURR STORY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div class="page active" id="page1">
+    <div class="card">
+      <h1>YOURR STORY</h1>
+      <div class="decor">🧸 🎀 🍒</div>
+      <p>tempat kecil buat cerita besar kamu</p>
+      <button onclick="nextPage('page2')">ayo tulis ceritamu hari ini</button>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page" id="page2">
+    <div class="card">
+      <h2>HOW ARE YOU TODAYY?</h2>
+      <p>ADA CERITA APA HARI INI??</p>
+
+      <textarea placeholder="tulis isi hati kamu di sini yaa..."></textarea>
+
+      <div class="emoji">
+        <span onclick="resultMood('happy')">😊</span>
+        <span onclick="resultMood('sad')">😭</span>
+        <span onclick="resultMood('angry')">😠</span>
+      </div>
+
+      <div class="decor">🧸 🎀 🍒</div>
+    </div>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page" id="page3">
+    <div class="card">
+      <h2 id="resultText"></h2>
+      <div class="decor">🧸 🎀 🍒</div>
+      <button onclick="nextPage('page1')">kembali ke awal</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
